@@ -1,0 +1,13 @@
+<div class="container">
+    <span>As frutas são fontes de vitaminas minerais, 
+        fibras e antioxidantes de extrema importância para funcionamento do nosso organismo.</span>
+    <table>
+        <tbody *ngFor="let item of produtos">
+            <tr *ngIf="item.categoria == 'frutas'">
+                <td>{{ item.descricao }}</td>
+                <td *ngIf="item.quantidade == 0; else noQuantidade">(não disponível)</td>
+                <ng-template #noQuantidade>(qtd: {{ item.quantidade }})</ng-template>
+            </tr>
+        </tbody>
+    </table>
+</div>

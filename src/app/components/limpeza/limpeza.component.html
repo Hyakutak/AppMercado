@@ -1,0 +1,12 @@
+<div class="container">
+    <span>Todos os itens de mercado e várias marcas.</span>
+    <table>
+        <tbody *ngFor="let item of produtos">
+            <tr *ngIf="item.categoria == 'limpeza'">
+                <td>{{ item.descricao }}</td>
+                <td *ngIf="item.quantidade == 0; else noQuantidade">(Nao disponivel)</td>
+                <ng-template #noQuantidade>(qtd: {{ item.quantidade }})</ng-template>
+            </tr>
+        </tbody>
+    </table>
+</div>

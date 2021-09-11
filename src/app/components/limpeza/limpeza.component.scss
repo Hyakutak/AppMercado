@@ -1,0 +1,22 @@
+.container {
+    overflow: hidden;
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container span {
+    color: rgb(119, 115, 115);
+    font-size: 12px;
+    letter-spacing: .2rem;
+}
+.container table {
+    width: 60%;
+    margin: 40px 0 0 170px !important;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(83, 83, 83);
+    border: solid 2px black;
+}
+.container table, tbody, tr, td {
+    background-color: rgb(240, 240, 240);
+}
